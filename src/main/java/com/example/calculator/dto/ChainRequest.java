@@ -31,11 +31,13 @@ public class ChainRequest {
 
     public static class OperationStep {
 
+
         @NotNull
         private String operation;
 
         @NotNull
         private BigDecimal operand;
+
 
         public String getOperation() {
             return operation;
@@ -50,6 +52,11 @@ public class ChainRequest {
         }
 
         public void setOperand(BigDecimal operand) {
+            this.operand = operand;
+        }
+
+        public OperationStep(String operation, BigDecimal operand) {
+            this.operation = operation;
             this.operand = operand;
         }
     }
