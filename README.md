@@ -15,7 +15,7 @@ A Spring Boot-based calculator backend that supports precise arithmetic operatio
 
 ---
 
-## 🛠 Technologies
+##  Technologies
 
 - Java 17+
 - Spring Boot
@@ -128,5 +128,5 @@ cd calculator
 ./mvnw spring-boot:run
 ```
 
-Then access: `http://localhost:8080`
+Then access: `http://localhost:8081`
 
