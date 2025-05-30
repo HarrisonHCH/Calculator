@@ -1,4 +1,4 @@
-package com.example.calculator.core;
+package com.example.calculator.controller;
 
 import com.example.calculator.dto.CalculateRequest;
 import com.example.calculator.dto.ChainRequest;

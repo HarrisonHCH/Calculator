@@ -2,6 +2,7 @@ package com.example.calculator.service;
 
 import com.example.calculator.operation.Operation;
 import com.example.calculator.strategy.OperationStrategy;
+import com.example.calculator.util.Constants;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
@@ -33,6 +34,8 @@ public class Calculator {
         BigDecimal a = new BigDecimal(num1.toString());
         BigDecimal b = new BigDecimal(num2.toString());
 
-        return strategy.calculate(a, b);
+
+        return strategy.calculate(a, b)
+                .setScale(Constants.DEFAULT_SCALE, Constants.DEFAULT_ROUNDING);
     }
 }

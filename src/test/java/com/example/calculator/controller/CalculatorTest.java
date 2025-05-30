@@ -1,4 +1,4 @@
-package com.example.calculator.core;
+package com.example.calculator.controller;
 
 import com.example.calculator.operation.Operation;
 import com.example.calculator.service.Calculator;
@@ -27,13 +27,13 @@ public class CalculatorTest {
     @Test
     void testAddition() {
         BigDecimal result = calculator.calculate(Operation.ADD, 3, 5);
-        assertEquals(new BigDecimal("8"), result);
+        assertEquals(new BigDecimal("8.0"), result);
     }
 
     @Test
     void testDivisionWithPrecision() {
         BigDecimal result = calculator.calculate(Operation.DIVIDE, 10, 3);
-        assertEquals(new BigDecimal("3.3333333333"), result);
+        assertEquals(new BigDecimal("3.3"), result);
     }
 
     @Test

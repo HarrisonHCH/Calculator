@@ -32,7 +32,7 @@ public class CalculatorServiceImplTest {
         request.setOperation("ADD");
 
         BigDecimal result = service.calculate(request);
-        assertEquals(new BigDecimal("9"), result);
+        assertEquals(new BigDecimal("9.0"), result);
     }
 
     @Test
@@ -45,7 +45,7 @@ public class CalculatorServiceImplTest {
         ));
 
         BigDecimal result = service.chainCalculate(request);
-        assertEquals(new BigDecimal("14"), result);
+        assertEquals(new BigDecimal("14.0"), result);
     }
 
     @Test
